@@ -1137,7 +1137,7 @@ class NumerAPI(base_api.Api):
             # TODO: update this branch to the main beta branch before merging
             file.write("git+https://github.com/numerai/numerapi@chris/compute-lite-beta-test\n")
             if add_pyarrow:
-                file.write("pyarrow\n")
+                file.write("pyarrow==9.0.0\n")
             if add_boto3:
                 file.write("boto3\n")
 
